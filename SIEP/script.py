@@ -14,7 +14,6 @@ import pystac
 import rasterio
 import rasterio.features
 import rasterio.windows
-from aiocogeo import COGReader
 from matplotlib import pyplot as plt
 from pyproj import CRS, Transformer
 
