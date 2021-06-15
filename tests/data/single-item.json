@@ -1,0 +1,667 @@
+{
+    "assets": {
+        "AOT": {
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/AOT.tif",
+            "proj:shape": [
+                1830,
+                1830
+            ],
+            "proj:transform": [
+                60,
+                0,
+                699960,
+                0,
+                -60,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Aerosol Optical Thickness (AOT)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B01": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.4439,
+                    "common_name": "coastal",
+                    "full_width_half_max": 0.027,
+                    "name": "B01"
+                }
+            ],
+            "gsd": 60,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B01.tif",
+            "proj:shape": [
+                1830,
+                1830
+            ],
+            "proj:transform": [
+                60,
+                0,
+                699960,
+                0,
+                -60,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 1 (coastal)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B02": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.4966,
+                    "common_name": "blue",
+                    "full_width_half_max": 0.098,
+                    "name": "B02"
+                }
+            ],
+            "gsd": 10,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B02.tif",
+            "proj:shape": [
+                10980,
+                10980
+            ],
+            "proj:transform": [
+                10,
+                0,
+                699960,
+                0,
+                -10,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 2 (blue)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B03": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.56,
+                    "common_name": "green",
+                    "full_width_half_max": 0.045,
+                    "name": "B03"
+                }
+            ],
+            "gsd": 10,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B03.tif",
+            "proj:shape": [
+                10980,
+                10980
+            ],
+            "proj:transform": [
+                10,
+                0,
+                699960,
+                0,
+                -10,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 3 (green)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B04": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.6645,
+                    "common_name": "red",
+                    "full_width_half_max": 0.038,
+                    "name": "B04"
+                }
+            ],
+            "gsd": 10,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B04.tif",
+            "proj:shape": [
+                10980,
+                10980
+            ],
+            "proj:transform": [
+                10,
+                0,
+                699960,
+                0,
+                -10,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 4 (red)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B05": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.7039,
+                    "full_width_half_max": 0.019,
+                    "name": "B05"
+                }
+            ],
+            "gsd": 20,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B05.tif",
+            "proj:shape": [
+                5490,
+                5490
+            ],
+            "proj:transform": [
+                20,
+                0,
+                699960,
+                0,
+                -20,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 5",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B06": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.7402,
+                    "full_width_half_max": 0.018,
+                    "name": "B06"
+                }
+            ],
+            "gsd": 20,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B06.tif",
+            "proj:shape": [
+                5490,
+                5490
+            ],
+            "proj:transform": [
+                20,
+                0,
+                699960,
+                0,
+                -20,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 6",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B07": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.7825,
+                    "full_width_half_max": 0.028,
+                    "name": "B07"
+                }
+            ],
+            "gsd": 20,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B07.tif",
+            "proj:shape": [
+                5490,
+                5490
+            ],
+            "proj:transform": [
+                20,
+                0,
+                699960,
+                0,
+                -20,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 7",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B08": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.8351,
+                    "common_name": "nir",
+                    "full_width_half_max": 0.145,
+                    "name": "B08"
+                }
+            ],
+            "gsd": 10,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B08.tif",
+            "proj:shape": [
+                10980,
+                10980
+            ],
+            "proj:transform": [
+                10,
+                0,
+                699960,
+                0,
+                -10,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 8 (nir)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B09": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.945,
+                    "full_width_half_max": 0.026,
+                    "name": "B09"
+                }
+            ],
+            "gsd": 60,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B09.tif",
+            "proj:shape": [
+                1830,
+                1830
+            ],
+            "proj:transform": [
+                60,
+                0,
+                699960,
+                0,
+                -60,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 9",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B11": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 1.6137,
+                    "common_name": "swir16",
+                    "full_width_half_max": 0.143,
+                    "name": "B11"
+                }
+            ],
+            "gsd": 20,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B11.tif",
+            "proj:shape": [
+                5490,
+                5490
+            ],
+            "proj:transform": [
+                20,
+                0,
+                699960,
+                0,
+                -20,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 11 (swir16)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B12": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 2.22024,
+                    "common_name": "swir22",
+                    "full_width_half_max": 0.242,
+                    "name": "B12"
+                }
+            ],
+            "gsd": 20,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B12.tif",
+            "proj:shape": [
+                5490,
+                5490
+            ],
+            "proj:transform": [
+                20,
+                0,
+                699960,
+                0,
+                -20,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 12 (swir22)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B8A": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.8648,
+                    "full_width_half_max": 0.033,
+                    "name": "B8A"
+                }
+            ],
+            "gsd": 20,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/B8A.tif",
+            "proj:shape": [
+                5490,
+                5490
+            ],
+            "proj:transform": [
+                20,
+                0,
+                699960,
+                0,
+                -20,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Band 8A",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "SCL": {
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/SCL.tif",
+            "proj:shape": [
+                5490,
+                5490
+            ],
+            "proj:transform": [
+                20,
+                0,
+                699960,
+                0,
+                -20,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Scene Classification Map (SCL)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "WVP": {
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/WVP.tif",
+            "proj:shape": [
+                10980,
+                10980
+            ],
+            "proj:transform": [
+                10,
+                0,
+                699960,
+                0,
+                -10,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "data"
+            ],
+            "title": "Water Vapour (WVP)",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "info": {
+            "href": "https://roda.sentinel-hub.com/sentinel-s2-l2a/tiles/32/U/QD/2021/6/7/0/tileInfo.json",
+            "roles": [
+                "metadata"
+            ],
+            "title": "Original JSON metadata",
+            "type": "application/json"
+        },
+        "metadata": {
+            "href": "https://roda.sentinel-hub.com/sentinel-s2-l2a/tiles/32/U/QD/2021/6/7/0/metadata.xml",
+            "roles": [
+                "metadata"
+            ],
+            "title": "Original XML metadata",
+            "type": "application/xml"
+        },
+        "overview": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.6645,
+                    "common_name": "red",
+                    "full_width_half_max": 0.038,
+                    "name": "B04"
+                },
+                {
+                    "center_wavelength": 0.56,
+                    "common_name": "green",
+                    "full_width_half_max": 0.045,
+                    "name": "B03"
+                },
+                {
+                    "center_wavelength": 0.4966,
+                    "common_name": "blue",
+                    "full_width_half_max": 0.098,
+                    "name": "B02"
+                }
+            ],
+            "gsd": 10,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/L2A_PVI.tif",
+            "proj:shape": [
+                343,
+                343
+            ],
+            "proj:transform": [
+                320,
+                0,
+                699960,
+                0,
+                -320,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "overview"
+            ],
+            "title": "True color image",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "thumbnail": {
+            "href": "https://roda.sentinel-hub.com/sentinel-s2-l1c/tiles/32/U/QD/2021/6/7/0/preview.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        },
+        "visual": {
+            "eo:bands": [
+                {
+                    "center_wavelength": 0.6645,
+                    "common_name": "red",
+                    "full_width_half_max": 0.038,
+                    "name": "B04"
+                },
+                {
+                    "center_wavelength": 0.56,
+                    "common_name": "green",
+                    "full_width_half_max": 0.045,
+                    "name": "B03"
+                },
+                {
+                    "center_wavelength": 0.4966,
+                    "common_name": "blue",
+                    "full_width_half_max": 0.098,
+                    "name": "B02"
+                }
+            ],
+            "gsd": 10,
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/TCI.tif",
+            "proj:shape": [
+                10980,
+                10980
+            ],
+            "proj:transform": [
+                10,
+                0,
+                699960,
+                0,
+                -10,
+                5900040,
+                0,
+                0,
+                1
+            ],
+            "roles": [
+                "overview"
+            ],
+            "title": "True color image",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "bbox": [
+        12.344446425857129,
+        52.17549424226928,
+        13.6341671437856,
+        53.1900450280898
+    ],
+    "collection": "sentinel-s2-l2a-cogs",
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    13.531018505310676,
+                    52.17549424226928
+                ],
+                [
+                    12.344446425857129,
+                    52.21515337845695
+                ],
+                [
+                    12.767012094556772,
+                    53.1900450280898
+                ],
+                [
+                    13.6341671437856,
+                    53.159413588610356
+                ],
+                [
+                    13.531018505310676,
+                    52.17549424226928
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    "id": "S2B_32UQD_20210607_0_L2A",
+    "links": [
+        {
+            "href": "https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a-cogs/items/S2B_32UQD_20210607_0_L2A",
+            "rel": "self"
+        },
+        {
+            "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/S2B_32UQD_20210607_0_L2A.json",
+            "rel": "canonical",
+            "type": "application/json"
+        },
+        {
+            "href": "https://cirrus-earth-search.aws.element84.com/v0/catid/sentinel-s2-l2a-aws/workflow-publish-sentinel/tiles-32-U-QD-2021-6-7-0",
+            "rel": "via-cirrus",
+            "title": "sentinel-s2-l2a-aws/workflow-publish-sentinel/tiles-32-U-QD-2021-6-7-0"
+        },
+        {
+            "href": "https://cirrus-v0-data-1qm7gekzjucbq.s3.us-west-2.amazonaws.com/sentinel-s2-l2a/32/U/QD/2021/6/S2B_32UQD_20210607_0_L2A/S2B_32UQD_20210607_0_L2A.json",
+            "rel": "derived_from",
+            "title": "Source STAC Item",
+            "type": "application/json"
+        },
+        {
+            "href": "https://cirrus-earth-search.aws.element84.com/v0/catid/sentinel-s2-l2a/workflow-cog-archive/S2B_32UQD_20210607_0_L2A",
+            "rel": "via-cirrus",
+            "title": "sentinel-s2-l2a/workflow-cog-archive/S2B_32UQD_20210607_0_L2A"
+        },
+        {
+            "href": "https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a-cogs",
+            "rel": "parent"
+        },
+        {
+            "href": "https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a-cogs",
+            "rel": "collection"
+        },
+        {
+            "href": "https://earth-search.aws.element84.com/v0/",
+            "rel": "root",
+            "type": "application/json"
+        }
+    ],
+    "properties": {
+        "constellation": "sentinel-2",
+        "created": "2021-06-07T22:30:34.793Z",
+        "datetime": "2021-06-07T10:16:14Z",
+        "eo:cloud_cover": 0.01,
+        "gsd": 10,
+        "instruments": [
+            "msi"
+        ],
+        "platform": "sentinel-2b",
+        "proj:epsg": 32632,
+        "sentinel:data_coverage": 63.48,
+        "sentinel:grid_square": "QD",
+        "sentinel:latitude_band": "U",
+        "sentinel:product_id": "S2B_MSIL2A_20210607T100559_N0300_R022_T32UQD_20210607T163734",
+        "sentinel:sequence": "0",
+        "sentinel:utm_zone": 32,
+        "sentinel:valid_cloud_cover": true,
+        "updated": "2021-06-07T22:30:34.793Z",
+        "view:off_nadir": 0
+    },
+    "stac_extensions": [
+        "eo",
+        "view",
+        "proj"
+    ],
+    "stac_version": "1.0.0-beta.2",
+    "type": "Feature"
+}
