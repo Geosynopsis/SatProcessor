@@ -26,6 +26,59 @@ or if you would like to make use of the conda-environment file prepared by autho
 >> python setup.py install
 ```
 
+### Using from script
+
+Users can use each component individually or could directly call script for the computations
+
+#### Searching Satellites Images:
+
+```python
+from datetime import datetime
+from SIEP.searcher import search_provider
+
+# Searchers are registered to provider in name `satellite_product` like `sentinel-2_l2a`. It's temporarily so, it could be subject to the change in future
+
+async def search():
+    bbox=[-180.-90,180, 90]
+    start = datetime(2020, 1, 1)
+    end = datetime(2020, 2, 1)
+    provider_name = f"sentinel-2_l2a"
+    searcher = search_provider.get(provider_name)
+    result = await searcher.search_items(bbox, start, end):
+    for item in result.items:
+        print(item)
+
+```
+
+#### Downloading Satellite Images
+
+```python
+from datetime import datetime
+from SIEP.downloader import download_provider
+
+# item generated via search or pystac.Item object. It must consist of assets
+async def download(item, assets=["B04","B05"]):
+    provider_name = f"sentinel-2_l2a"
+    downloader = download_provider.get(provider_name)(item)
+    return await downloader.download(assets=assets, gjson="overlapping geometry in geojson format")
+
+```
+
+#### Computing Indices
+
+> Since we have built this tool for utilizing the capability of COG and reducing the local copies of data, we made the computation to directly use the downloader to access the data when needed.  
+
+```python
+from datetime import datetime
+from SIEP.calculator import calculation_provider
+
+async def compute_ndvi():
+    provider_name = f"sentinel-2_l2a"
+    calculator = calculation_provider.get(provider_name)(downloader) # The downloader created before
+    return await calculator.compute('ndvi', calculator)
+
+```
+
 ### Using with CLI
 
 Users can use the tool after installation by directly accessing the script or via cli as follows: 

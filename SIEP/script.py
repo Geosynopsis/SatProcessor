@@ -53,7 +53,7 @@ async def calculate_indices(
         Dict[str, np.ndarray]: Dictionary with indice names as key and resulting numpy masked array as value.
     """
     bbox = get_bound(gjson)
-    provider_key = f"({satellite}, {product})"
+    provider_key = f"{satellite}_{product}"
 
     if provider_key not in search_provider.names:
         raise ValueError(

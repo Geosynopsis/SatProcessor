@@ -128,5 +128,5 @@ class COGDownloader(Downloader):
 
 
 download_provider = ProviderBase(obj_type=Downloader)
-download_provider.register("(sentinel-2, l2a)", COGDownloader)
+download_provider.register("sentinel-2_l2a", COGDownloader)
 

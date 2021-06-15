@@ -142,5 +142,5 @@ class Sentinel2L2ASearcher(Element84Searcher):
 
 
 search_provider = ProviderBase(obj_type=Searcher)
-search_provider.register("(sentinel-2, l2a)", Sentinel2L2ASearcher)
+search_provider.register("sentinel-2_l2a", Sentinel2L2ASearcher)
 

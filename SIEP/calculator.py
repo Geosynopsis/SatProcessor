@@ -63,7 +63,7 @@ class Sentinel2Calculator(Calculator):
 
 
 calculation_provider = ProviderBase(obj_type=Calculator)
-calculation_provider.register("(sentinel-2, l2a)", Sentinel2Calculator)
+calculation_provider.register("sentinel-2_l2a", Sentinel2Calculator)
 
 
 def generate_statistics(array: np.ndarray):
