@@ -13,7 +13,7 @@ GJSON_PATH = DATA_PATH / "quetta.geojson"
 
 
 @pytest.fixture
-def geojson():
+def gjson():
     with open(GJSON_PATH) as f:
         return geojson.load(f)
 
@@ -22,12 +22,7 @@ def geojson():
 @pytest.mark.asyncio
 async def downloader():
     res = await Sentinel2L2ASearcher().search_items(
-        [
-            67.00183868408203,
-            30.171546895744946,
-            67.03205108642578,
-            30.196772595195785,
-        ],
+        [67.001839, 30.171547, 67.032051, 30.196773,],
         datetime(2018, 1, 1),
         datetime(2018, 2, 1),
     )
@@ -36,7 +31,7 @@ async def downloader():
 
 
 @pytest.mark.asyncio
-async def test_download(downloader):
+async def test_download(downloader, gjson):
     red = await downloader.download(assets=["B04"], gjson=gjson)
     assert red[0].mean() == 2014.7269139051066
     assert red[0].data.mean() == 2013.230553552832
