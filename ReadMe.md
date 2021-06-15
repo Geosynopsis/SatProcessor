@@ -13,7 +13,7 @@ Users can use the tool to compute NDVI, NDWI and generate statics of those indic
 The tool has been tested in python 3.9, therefore it's advisable. However the libraries used should also work with python 3.6 onwards. The tool can be installed by directly installing this package via pip as follows:
 
 ```bash
->> pip install git@github.com:Geosynopsis/SatProcessor.git
+>> pip install git+ssh://git@github.com:Geosynopsis/SatProcessor.git
 ```
 
 or if you would like to make use of the conda-environment file prepared by author, you could clone and install as follows:

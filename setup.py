@@ -11,7 +11,8 @@ setup(
         "pystac==0.5.6",
         "shapely==1.7.1",
         "matplotlib==3.4.2",
-        "pyproj==3.1.0"
+        "pyproj==3.1.0",
+        "geojson==2.5.0"
     ],
     test_requires=["pytest==6.2.4", "pytest-asyncio==0.15.1"],
     packages=find_packages(exclude=["tests"]),
