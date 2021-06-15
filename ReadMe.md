@@ -1,6 +1,7 @@
 ## Satellite Image Explorer and Processor (SIEP)
 
 ![Coverage](coverage.svg)
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 SIEP allows users to search satellite scenes with specific filtering criteria and use the scenes with the processors to make the mathematical computations for scientific purposes.
@@ -95,6 +96,7 @@ Users can use the tool after installation by directly accessing the script or vi
 During the system's design, we were mindful of the system's modularity and ease of extension in the future. However, it makes some assumptions that are core to the strategy:
 
 > The search is a client implementation of API with STAC specification. One can integrate another type of API using an adapter that maps the results to the Collection, ItemCollection, Item, and Asset types of STAC.
+> The reagion of interest must always be available and should be within the extent of single image. In future, we will have to find a better way of handling the ROI spanning over multiple image tiles.
 
 The system implements consists of three different significant components `Searcher` , `Downloader` , and `Calculator` . Searcher is responsible for search while Downloader for downloading data and Calculator for operations on the data. Since the search, data access model, and operation depend on different factors such as the satellite mission, product type, distribution format of files, etc., separate implementations of those components are developed and provided through factories to limit coupling.
 
@@ -109,3 +111,9 @@ The test plan we adopted for this system is as follows:
 
 * Unit test each component
 * Integration test of whole user interaction flow with different input configurations
+
+### Outlook
+
+* Adding support for more satellites and products
+* Adding downloader for non COG files as well
+* Support download without area as well
