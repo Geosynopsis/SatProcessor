@@ -122,7 +122,8 @@ async def main(
         if stats:
             print(f"Statistics for {idx}: {generate_statistics(indice)}")
         plot(indice, f"Indice {idx}")
-    plt.show(block=True)
+    plt.draw()
+    plt.show()
     print(f"It took {datetime.now() - start} ")
 
 

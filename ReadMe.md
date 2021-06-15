@@ -14,13 +14,13 @@ Users can use the tool to compute NDVI, NDWI and generate statics of those indic
 
 ### Installation and Using Tool
 
-The tool has been tested in python 3.9, therefore it's advisable. However the libraries used should also work with python 3.6 onwards. The tool can be installed by directly installing this package via pip as follows:
+The tool has been tested in python 3.9. Therefore it is advisable. However, the libraries used should also work with python 3.6 onwards. Users cna install the tool by directly installing this package via pip as follows:
 
 ```bash
 >> pip install git+ssh://git@github.com/Geosynopsis/SatProcessor.git
 ```
 
-or if you would like to make use of the conda-environment file prepared by author, you could clone and install as follows:
+or if you would like to make use of the conda-environment file prepared by the author, you could clone and install as follows:
 
 ```bash
 >> git clone git@github.com:Geosynopsis/SatProcessor.git
@@ -30,9 +30,9 @@ or if you would like to make use of the conda-environment file prepared by autho
 >> python setup.py install
 ```
 
-### Using from script
+### Using from the script
 
-Users can use each component individually or could directly call script for the computations
+Users can use each component individually or could directly call a script for the computations.
 
 #### Searching Satellites Images:
 
@@ -70,7 +70,7 @@ async def download(item, assets=["B04","B05"]):
 
 #### Computing Indices
 
-> Since we have built this tool for utilizing the capability of COG and reducing the local copies of data, we made the computation to directly use the downloader to access the data when needed.  
+> Since we have built this tool for utilizing the capability of COG and reducing the local copies of data, we made the computation to use the downloader to access the data when needed directly.  
 
 ```python
 from datetime import datetime
@@ -96,11 +96,12 @@ Users can use the tool after installation by directly accessing the script or vi
 During the system's design, we were mindful of the system's modularity and ease of extension in the future. However, it makes some assumptions that are core to the strategy:
 
 > The search is a client implementation of API with STAC specification. One can integrate another type of API using an adapter that maps the results to the Collection, ItemCollection, Item, and Asset types of STAC.
-> The reagion of interest must always be available and should be within the extent of single image. In future, we will have to find a better way of handling the ROI spanning over multiple image tiles.
 
-The system implements consists of three different significant components `Searcher` , `Downloader` , and `Calculator` . Searcher is responsible for search while Downloader for downloading data and Calculator for operations on the data. Since the search, data access model, and operation depend on different factors such as the satellite mission, product type, distribution format of files, etc., separate implementations of those components are developed and provided through factories to limit coupling.
+> The region of interest must always be available and should be within the extent of a single image. In the future, we will have to find a better way of handling the ROI spanning over multiple image tiles.
 
-A high level UML diagram of the system looks as such:
+The system implementation consists of three different significant components `Searcher`, `Downloader`, and `Calculator`. The searcher is responsible for search while the downloader for downloading data and the calculator for operations on the data. Since the search, data access model, and operation depend on different factors such as the satellite mission, product type, distribution format of files, etc., separate implementations of those components are developed and provided through factories to limit coupling.
+
+A high-level UML diagram of the system looks as such:
 
 ![High Level Architecture](high-level-architecture.png)
 
