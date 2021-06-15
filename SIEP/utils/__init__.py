@@ -1,5 +1,5 @@
 import numpy as np
-from typing import Iterable, List
+from typing import Iterable, List, Tuple
 
 
 def get_block_candidates(
@@ -9,7 +9,7 @@ def get_block_candidates(
     y_off: int = 0,
     x_chunk: int = 128,
     y_chunk: int = 128,
-) -> Iterable[tuple[int, int, int, int]]:
+) -> Iterable[Tuple[int, int, int, int]]:
     """Get blocks of given chunk sizes for cartesian space starting with x and y
     offset and having given width and height.
         
