@@ -1,5 +1,8 @@
 ## Satellite Image Explorer and Processor (SIEP)
 
+![Coverage](coverage.svg)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 SIEP allows users to search satellite scenes with specific filtering criteria and use the scenes with the processors to make the mathematical computations for scientific purposes.
 
 SIEP is an extendable system that currently has implementations for the L2A product of Sentinel-2. It uses API built with STAC specification (for now Element84 API only) for searching and currently calculates NDVI, NDWI, and the general statistics of those indices.
